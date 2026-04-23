@@ -1,6 +1,7 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef } from 'react'
 import { Container, Row, Button } from 'reactstrap'
 import { NavLink, Link } from "react-router-dom"
+import logo from "../../assets/images/lg.png";
 import './header.css'
 
 const nav__links = [
@@ -13,21 +14,21 @@ const Header = () => {
     const headerRef = useRef(null)
     const menuRef = useRef(null)
 
-    const stickyheaderFunc = () => {
-        let head = document.getElementById('head')
-        window.addEventListener('scroll', () => {
-            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                head.classList.add('sticky__header')
-            } else {
-                head.classList.remove('sticky__header')
-            }
-        })
-    }
+   // const stickyheaderFunc = () => {
+        //let head = document.getElementById('head')
+       // window.addEventListener('scroll', () => {
+         //   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+          //      head.classList.add('sticky__header')
+          //  } else {
+          //      head.classList.remove('sticky__header')
+          //  }
+       // })
+    //}
 
-    useEffect(() => {
-        stickyheaderFunc()
-        return () => window.removeEventListener('scroll', stickyheaderFunc)
-    }, [])
+   // useEffect(() => {
+       // stickyheaderFunc()
+        //return () => window.removeEventListener('scroll', stickyheaderFunc)
+    //}, [])//
 
     const toggleMenu = () => menuRef.current.classList.toggle('show__menu')
 
@@ -39,7 +40,8 @@ const Header = () => {
 
                         {/* ===== Logo / Name ===== */}
                         <Link to='/' className='logo'>
-                            <h3 style={{ margin: 0 }}>Madhav Project</h3>
+                              <img src={logo} alt="logo" style={{ height: "100px" }} />
+
                         </Link>
 
                         {/* ===== Menu ===== */}
