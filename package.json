@@ -1,48 +1,44 @@
 {
-  "name": "client",
-  "version": "0.1.0",
+  "name": "react-example",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "axios": "^1.5.0",
-    "bootstrap": "^5.3.1",
-    "google-map-react": "^2.2.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-responsive-masonry": "^2.1.7",
-    "react-router-dom": "^6.15.0",
-    "react-scripts": "^5.0.1",
-    "react-slick": "^0.29.0",
-    "react-speech": "^1.0.2",
-    "reactstrap": "^9.2.0",
-    "remixicon": "^3.5.0",
-    "slick-carousel": "^1.8.1",
-    "web-vitals": "^2.1.4"
-  },
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "vite --port=3000 --host=0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rm -rf dist server.js",
+    "lint": "tsc --noEmit"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "dependencies": {
+    "@google/genai": "^2.4.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-react": "^6.1.1",
+    "bootstrap": "^5.3.8",
+    "canvas-confetti": "^1.9.4",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "lucide-react": "^0.546.0",
+    "motion": "^12.23.24",
+    "react": "^19.0.1",
+    "react-dom": "^19.0.1",
+    "react-router-dom": "^7.18.4",
+    "reactstrap": "^9.2.3",
+    "remixicon": "^4.9.1",
+    "three": "^0.186.1",
+    "vite": "^8.3.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.186.0",
+    "autoprefixer": "^10.4.21",
+    "esbuild": "^0.25.0",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.21.0",
+    "typescript": "^7.0.2"
   }
 }
