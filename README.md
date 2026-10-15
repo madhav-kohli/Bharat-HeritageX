@@ -18,6 +18,7 @@ Bharat HeritageX is an interactive web platform designed to showcase India's his
 - 🖼️ **Gallery & Destination Details:** Browse heritage visuals and learn more about cultural destinations.
 - 🌐 **Multilingual Experience:** Support a more accessible heritage exploration experience across languages.
 - 📱 **Responsive Interface:** Access the platform across desktop and mobile screen sizes.
+- 🏛️ **Interactive 3D Heritage Models:** Integrated Three.js to render 3D models of heritage structures, creating a more immersive and engaging cultural exploration experience.
 
 ## 🛠️ Tech Stack
 
@@ -25,6 +26,7 @@ Bharat HeritageX is an interactive web platform designed to showcase India's his
 - **Routing:** React Router
 - **APIs & Integrations:** Google Maps API, AI chatbot integration
 - **HTTP Requests:** Axios
+- **3D Visualization:** Three.js
 - **Deployment:** Vercel
 
 ## 🚀 Live Demo
